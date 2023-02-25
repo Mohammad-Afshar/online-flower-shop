@@ -1,0 +1,77 @@
+.products {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-bottom: 20px;
+}
+.products img {
+  width: 200px;
+  height: 300px;
+}
+.product {
+  width: 300px;
+  background-color: #f6f6f6;
+  margin: 10px 20px;
+  border-radius: 20px;
+  box-shadow: 4px 4px 5px rgb(209, 209, 209);
+}
+.product:hover {
+  transform: scale(1.02);
+  transition: 0.3s all ease-in;
+}
+
+.product .header {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+.product .header img {
+  cursor: pointer;
+}
+.product .main {
+  text-align: right;
+  padding: 0 10px;
+}
+.product .main span {
+  margin-left: 5px;
+}
+.product .footer {
+  display: flex;
+  justify-content: space-between;
+}
+.product .footer .add {
+  width: 80px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #059669;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.product .footer .add button {
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  font-family: "yekan";
+}
+
+.product .footer .add a {
+  padding: 8px 2px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.product .footer .price {
+  font-weight: bold;
+  display: flex;
+  justify-content: flex-start;
+  padding-right: 10px;
+}
+.product .footer .price span {
+  margin-left: 5px;
+}

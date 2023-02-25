@@ -1,0 +1,148 @@
+
+.root {
+  display: flex;
+  justify-content: center;
+}
+.parent {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  padding-bottom: 20px;
+}
+
+.query {
+  margin-bottom: 10px;
+  display: flex;
+  border-bottom: 1px solid rgb(221, 219, 219);
+}
+.query .action {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+.query .action span {
+  vertical-align: top;
+  font-weight: bold;
+}
+.query .action svg {
+  width: 22px;
+  height: 22px;
+  margin: 0 5px;
+}
+.query .action svg:last-child {
+  cursor: pointer;
+  color: green;
+}
+.query .action svg:first-child {
+  cursor: pointer;
+  color: rgb(243, 97, 86);
+}
+.query .items {
+  width: 50vw;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}
+.query .items img {
+  width: 100px;
+  height: 120px;
+  border-radius: 10px;
+}
+.query .items .details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  margin-right: 10px;
+  font-weight: bold;
+}
+.query .items .details p:last-child {
+  display: flex;
+}
+.query .items .details p:last-child span {
+  padding-right: 5px;
+}
+.summery {
+  width: 35vw;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 20px;
+}
+.summery button {
+  cursor: pointer;
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  background-color: #059669;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  font-family: "yekan";
+  font-weight: bold;
+}
+.summery button:hover {
+  transform: scale(1.01);
+  transition: 0.2s ease-out;
+}
+
+.summery .buy {
+  display: flex;
+  justify-content: space-between;
+}
+
+.summery .buy p {
+  display: flex;
+  margin-right: 5px;
+  padding-bottom: 5px;
+}
+
+.summery div:last-child {
+  color: #059669;
+  font-weight: bold;
+}
+.summery button a {
+  padding: 9px 175px;
+}
+.error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.error img {
+  width: 400px;
+}
+.error button {
+  margin: 10px 0;
+  cursor: pointer;
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  background-color: #059669;
+  border: none;
+  color: #fff;
+  font-size: 14px;
+  font-family: "yekan";
+}
+.error button:hover {
+  transform: scale(1.01);
+  transition: 0.2s ease-out;
+}
+.error button a {
+  padding: 9px 115px;
+}
+
+@media only screen and (max-width: 600px) {
+  .root {
+    flex-direction: column;
+  }
+
+  .query {
+    justify-content: space-between;
+    align-items: center;
+  }
+  .summery {
+    width: 100vw;
+  }
+}

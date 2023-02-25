@@ -1,0 +1,78 @@
+.parent {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(173, 172, 172);
+}
+.modal {
+  background-color: #fff;
+  width: 40vw;
+  height: 60vh;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.modal .header img {
+  height: 40px;
+}
+.modal .header p {
+  font-weight: bold;
+  margin: 10px 0;
+}
+.modal .header input {
+  width: 60%;
+  height: 35px;
+  padding: 0 10px;
+  border: 2px solid #059669;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  font-family: 'yekan';
+  font-size: 14px;
+  
+  font-weight: bold;
+  text-align: center;
+}
+
+ .footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.modal .footer button {
+  cursor: pointer;
+  width: 60%;
+  height: 40px;
+  border-radius: 5px;
+  background-color: #059669;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  font-family: "yekan";
+}
+.modal .footer button:hover {
+  transform: scale(1.01);
+  transition: 0.2s ease-out;
+}
+.footer button a {
+  padding: 9px 115px;
+}
+
+@media only screen and (max-width: 1020px) {
+  .modal {
+    width: 70vw;
+    height: 70vh;
+  }
+
+}

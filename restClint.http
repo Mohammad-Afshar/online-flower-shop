@@ -1,0 +1,14 @@
+###
+POST  https://jsonplaceholder.typicode.com/users
+
+content{
+    "name":"ali",
+    "username":"mra",
+    "email":"atestli@hjdhj.com",
+}
+
+###
+GET  https://jsonplaceholder.typicode.com/users
+
+###
+GET https://nodejs-post-app.herokuapp.com

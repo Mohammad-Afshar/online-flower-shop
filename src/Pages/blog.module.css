@@ -1,0 +1,13 @@
+.parent {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 30px 50px;
+  background-color: #f6f6f6;
+  direction: rtl;
+}
+
+.parent Cart {
+  margin: 0 10px;
+}
